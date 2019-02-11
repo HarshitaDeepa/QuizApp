@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+   <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+       android:background="#E74">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="Quiz Time"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:textColor="#FFF"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="20dp"
+                android:textColor="#FFF"
+                android:text="Q1: What is the capital of canada?"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/question_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:textColor="#FFF"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFF"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="20dp"
+                android:text="Q2: Which of the following is/are the isotopes of hydrogen?"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/question_2_protium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:textColor="#FFF"
+                android:layout_marginLeft="16dp"
+                android:text="Protium" />
+
+            <CheckBox
+                android:id="@+id/question_2_Deuterium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:textColor="#FFF"
+                android:layout_marginLeft="16dp"
+                android:text="Deuterium" />
+
+            <CheckBox
+                android:id="@+id/question_2_Tritium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:textColor="#FFF"
+                android:layout_marginLeft="16dp"
+                android:text="Tritium" />
+
+            <CheckBox
+                android:id="@+id/question_2_None"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:textColor="#FFF"
+                android:text="None" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="16dp"
+                android:textColor="#FFF"
+                android:layout_marginTop="20dp"
+                android:text="Q3: Java is an object oriented language."
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_group_question_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/question_3_true"
+                    android:textColor="#FFF"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="True" />
+
+                <RadioButton
+                    android:id="@+id/question_3_false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFF"
+                    android:layout_marginLeft="16dp"
+                    android:text="False"
+                    android:layout_marginTop="3dp"/>
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="16dp"
+                android:textColor="#FFF"
+
+                android:layout_marginTop="20dp"
+                android:text="Q4: In java, which class contains scanner methood?"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/question_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:textColor="#FFF"
+                android:layout_marginRight="16dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="16dp"
+                android:textColor="#FFF"
+                android:layout_marginTop="20dp"
+                android:text="Q5: In html, which tag is used to break a line?"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_group_question_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/question_5_br"
+                    android:textColor="#FFF"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="br" />
+
+                <RadioButton
+                    android:id="@+id/question_5_b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:textColor="#FFF"
+                    android:layout_marginTop="3dp"
+                    android:text="b" />
+
+                <RadioButton
+                    android:id="@+id/question_5_n"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFF"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="3dp"
+                    android:text="n" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:textColor="#FFF"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="20dp"
+                android:text="Q6: In html, which tag is used to add links?"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/question_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFF"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:textColor="#FFF"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="20dp"
+                android:text="Q7: What is the another name of Jaipur city?"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/question_7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFF"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/evaluate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="22dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="22dp"
+                    android:onClick="startEvaluation"
+                    android:text="submit"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center"
+                    android:textColor="#ff0033"/>
+
+                <Button
+                    android:id="@+id/reset"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="22dp"
+                    android:onClick="reset"
+                    android:text="reset"
+                    android:textColor="#ff0033"
+                    android:layout_gravity="center"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Score:"
+                    android:id="@+id/scoreText"
+                   android:layout_marginLeft="80dp"
+                    android:textSize="45sp"
+                    android:textColor="#fff"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:id="@+id/score"
+                    android:layout_toRightOf="@id/scoreText"
+                    android:layout_marginBottom="20dp"
+                    android:textSize="45sp"
+                    android:textColor="#fff"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/7"
+                    android:layout_toRightOf="@id/score"
+                    android:textSize="45sp"
+                    android:textColor="#fff"/>
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/text1"
+                android:layout_marginLeft="40dp"
+                android:textSize="25sp"
+                android:layout_marginBottom="20dp"
+                android:textColor="#fff"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
